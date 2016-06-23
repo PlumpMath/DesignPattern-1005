@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Test1.Model.AbstractFactory
+namespace DesignPattern.AbstractFactory
 {
     // 抽象工厂： 对"多系列对象构建"的需求变化, 若仅仅"需要哪些对象(道路、丛林) 经常发生改变不能使用该模式"
 
@@ -110,12 +110,12 @@ namespace Test1.Model.AbstractFactory
         }
     }
 
-    class App
-    {
-        public static void Main(string[] args)
-        {
-            GameManager g = new GameManager(new ModernTotalFactory());
-            g.BuildGameTotal();
-        }
-    }
+    //class App
+    //{
+    //    public static void Main(string[] args)
+    //    {
+    //        GameManager g = new GameManager(new ModernTotalFactory());
+    //        g.BuildGameTotal();
+    //    }
+    //}
 }
